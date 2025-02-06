@@ -1,6 +1,6 @@
 ---
 encoding: "UTF-8"
-title: "Rmarkdown: Ciência escrita com transparência e reprodutível"
+title: "Rmarkdown: ciência escrita com transparência e reprodutível"
 author: "Ricardo de Oliveira Perdiz"
 role: "Pós-doutorando"
 org: "PRONAT UFRR"
@@ -80,7 +80,6 @@ xaringanExtra::use_share_again()
 ```{r}
 #| label: emoji
 #| include: false
-#| eval: true
 desespero <- 
   emojis |> filter(name == "person facepalming") |> 
   pull(emoji)
@@ -93,9 +92,37 @@ fantasma <-
 
 ```{r}
 #| include: false
-#| eval: true
 # prepara_dados_demo.R
 load("output/dados_demo.RData")
+```
+
+```{r}
+#| label: metathis
+#| include: false
+meta() |>
+  meta_name("github-repo" = "ricoperdiz/2025_02_Rmrkdn_CienciaReprodutivel") |>
+  meta_social(
+    title = "Rmarkdown: ciência escrita com transparência e reprodutível",
+    description = paste(
+      "Palestra de autoria de Ricardo Perdiz sobre o uso do pacote `rmarkdown` para a comunicação, transparência quanto à análise de dados e reprodutibilidade,",
+      "apresentada dentro da disciplina de 'Comunicação Científica' ministrada no ano de 2025 pelos professores Dra. Franciele Oliveira Campos da Rocha (UFRR), Dr. Ricardo Perdiz (UFRR) e Dr. Umberto Zottich Pereira (UFRR)",
+      "e ofertada no Programa de Pós-graduação em Recursos Naturais (PRONAT) da Universidade Federal de Roraima."
+    ),
+    url = "https://ricoperdiz.github.io/2025_02_Rmrkdn_CienciaReprodutivel/",
+    image = "https://github.com/ricoperdiz/2025_02_Rmrkdn_CienciaReprodutivel/blob/main/images/slide_social.png?raw=true",
+    image_alt = paste(
+      "Slide resumindo o processo do método científico, demonstrando a busca por literatura, coleta de dados e escrita científica",
+      "visando responder perguntas. Slide contido dentro da palestra '`Rmarkdown:",
+      "ciência escrita com transparência e reprodutível`,",
+      "apresentada dentro da disciplina 'PR009 Comunicação Científica' ministrada pelos professores Dra. Franciele Oliveira Campos da Rocha (UFRR), Dr. Ricardo Perdiz (UFRR) e Dr. Umberto Zottich Pereira (UFRR),",
+      " e ofertada no Programa de Pós-graduação em Recursos Naturais (PRONAT) da Universidade Federal de Roraima."
+    ),
+    og_type = "website",
+    og_author = "R. O. Perdiz",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ricoperdiz",
+    twitter_site = "@ricoperdiz"
+  )
 ```
 
 class: left, middle
