@@ -1,0 +1,22 @@
+/* --------------Even split- 3 columns--------------- */
+
+.columns {
+  display: flex;
+}
+
+.left-col {
+  width: 33%;
+  text-align: center;
+}
+
+.middle-col {
+  width: 33%;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.right-col {
+  width: 33%;
+  text-align: center;
+  padding-left: 20px;
+}
